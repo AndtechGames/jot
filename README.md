@@ -1,6 +1,6 @@
 [![NuGet](https://img.shields.io/nuget/vpre/Andtech.Jot)](https://nuget.org/packages/Andtech.Jot)
 
-Command line journal manager
+Command line journaling
 > Jot is in **very early** alpha. Please use with caution.
 
 # Table of Contents
