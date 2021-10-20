@@ -1,10 +1,10 @@
+# Jot
+
+*Command line journaling*
+
 [![NuGet](https://img.shields.io/nuget/vpre/Andtech.Jot)](https://nuget.org/packages/Andtech.Jot)
 
-Command line journaling
 > Jot is in **very early** alpha. Please use with caution.
-
-# Table of Contents
-[TOC]
 
 # Prerequisites
 * [.NET Core](https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools)
