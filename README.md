@@ -2,8 +2,6 @@
 
 *Command line journaling*
 
-[![NuGet](https://img.shields.io/nuget/vpre/Andtech.Jot)](https://nuget.org/packages/Andtech.Jot)
-
 > Jot is in **very early** alpha. Please use with caution.
 
 # Prerequisites
