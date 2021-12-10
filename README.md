@@ -2,6 +2,8 @@
 
 *Command line journaling*
 
+![badge](https://img.shields.io/github/v/tag/andtechstudios/jot)
+
 > Jot is in **very early** alpha. Please use with caution.
 
 # Prerequisites
