@@ -2,7 +2,7 @@
 
 *Command line journaling*
 
-[![badge](https://img.shields.io/github/v/tag/andtechstudios/jot?label=nuget)](https://gitlab.com/andtech/pkg/-/packages)
+[![badge](https://img.shields.io/github/v/tag/andtechstudios/jot?label=nuget)](https://gitlab.com/andtech/pkg/-/packages?search[]=jot)
 
 > Jot is in **very early** alpha. Please use with caution.
 
