@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
 		<TargetFrameworks>net6.0;net5.0;netcoreapp3.1</TargetFrameworks>
-		<Version>0.3.3</Version>
+		<Version></Version>
 		<Company>Andtech</Company>
 		<StartupObject>Andtech.Jot.Program</StartupObject>
 	</PropertyGroup>
@@ -19,8 +19,8 @@
 		<RepositoryType>git</RepositoryType>
 		<PackageLicenseExpression></PackageLicenseExpression>
 		<AssemblyName>Jot</AssemblyName>
-		<AssemblyVersion>0.3.3.0</AssemblyVersion>
-		<FileVersion>0.3.3.0</FileVersion>
+		<AssemblyVersion></AssemblyVersion>
+		<FileVersion></FileVersion>
 		<Product>Jot</Product>
 		<RepositoryUrl>https://github.com/andtechstudios/jot</RepositoryUrl>
 		<RootNamespace>Andtech.Jot</RootNamespace>
