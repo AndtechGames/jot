@@ -81,31 +81,34 @@ namespace Andtech.Jot
 			var configuration = repository.GetConfiguration();
 
 			var args = new List<string>();
-			string filename;
-			if (string.IsNullOrEmpty(configuration.editor))
+			string editorBinary = Environment.GetEnvironmentVariable("EDITOR");
+			if (string.IsNullOrEmpty(editorBinary))
 			{
-				filename = relativePath;
-			}
-			else
-			{
-				var tokens = configuration.editor.Split(" ");
-				filename = tokens[0];
-
-				if (tokens.Length > 1)
+				if (string.IsNullOrEmpty(configuration.editor))
 				{
-					args.AddRange(tokens.Skip(1));
+					editorBinary = relativePath;
 				}
+				else
+				{
+					var tokens = configuration.editor.Split(" ");
+					editorBinary = tokens[0];
 
-				args.Add(relativePath);
+					if (tokens.Length > 1)
+					{
+						args.AddRange(tokens.Skip(1));
+					}
+
+					args.Add(relativePath);
+				}
 			}
 
 			var argString = string.Join(" ", args.Select(x => $"\"{x}\""));
 			if (options.Verbose)
 			{
-				Console.WriteLine("{0} {1}", filename, argString);
+				Console.WriteLine("{0} {1}", editorBinary, argString);
 			}
 
-			await Cli.Wrap(filename)
+			await Cli.Wrap(editorBinary)
 				.WithArguments(argString)
 				.WithWorkingDirectory(Environment.CurrentDirectory)
 				.ExecuteAsync();
