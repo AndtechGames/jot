@@ -77,7 +77,6 @@ namespace Andtech.Jot
 			}
 
 			var relativePath = Path.GetRelativePath(Environment.CurrentDirectory, path);
-
 			var configuration = repository.GetConfiguration();
 
 			var args = new List<string>();
@@ -100,6 +99,10 @@ namespace Andtech.Jot
 
 					args.Add(relativePath);
 				}
+			}
+			else
+			{
+				args.Add(relativePath);
 			}
 
 			var argString = string.Join(" ", args.Select(x => $"\"{x}\""));
