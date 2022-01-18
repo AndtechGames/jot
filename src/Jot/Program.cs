@@ -13,7 +13,7 @@ namespace Andtech.Jot
 	class Program
 	{
 
-		static void Main(string[] args)
+		static async Task Main(string[] args)
 		{
 			var result = Parser.Default.ParseArguments<ReplOptions, InitOptions, ConfigOptions, NewPageOptions, OpenPageOptions>(args);
 			result
@@ -22,7 +22,7 @@ namespace Andtech.Jot
 				.WithParsed<ConfigOptions>(AdminOperations.Configure)
 				.WithParsed<NewPageOptions>(PageOperations.NewPage)
 			;
-			result
+			await result
 				.WithParsedAsync<OpenPageOptions>(OpenPageWithExceptionLogging);
 		}
 
