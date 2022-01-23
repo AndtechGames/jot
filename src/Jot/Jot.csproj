@@ -36,7 +36,6 @@
 	<!-- NuGet Packages -->
 	<ItemGroup>
 	  <PackageReference Include="Chronic" Version="0.3.2" />
-	  <PackageReference Include="CliWrap" Version="3.3.2" />
 	  <PackageReference Include="CommandLineParser" Version="2.8.0" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	</ItemGroup>

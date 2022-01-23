@@ -111,10 +111,16 @@ namespace Andtech.Jot
 				Console.WriteLine("{0} {1}", editorBinary, argString);
 			}
 
-			await Cli.Wrap(editorBinary)
-				.WithArguments(argString)
-				.WithWorkingDirectory(Environment.CurrentDirectory)
-				.ExecuteAsync();
+			var process = new Process
+			{
+				StartInfo = new ProcessStartInfo
+				{
+					FileName = editorBinary,
+					Arguments = argString,
+				},
+			};
+			process.Start();
+			process.WaitForExit();
 		}
 
 		private static string ToDisplayString(DateTime dateTime)
